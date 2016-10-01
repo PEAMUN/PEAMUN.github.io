@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+		@font-face {
+
+			font-family: 'Corbel';
+			src: url('../../Graphics/Fonts/corbel-webfont.eot');
+			src: url('../../Graphics/Fonts/corbel-webfont.eot?#iefix') format('embedded-opentype'),
+			url('../../Graphics/Fonts/corbel-webfont.woff') format('woff'),
+			url('../../Graphics/Fonts/corbel-webfont.ttf') format('truetype'),
+			url('../../Graphics/Fonts/corbel-webfont.svg#corbelregular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+
+		}
+
+
+
+
+		@font-face {
+			font-family: 'Corbert';
+			src: url('../../Graphics/Fonts/corbert-webfont.eot');
+			src: url('../../Graphics/Fonts/corbert-webfont.eot?#iefix') format('embedded-opentype'),
+			url('../../Graphics/Fonts/corbert-webfont.woff') format('woff'),
+			url('../../Graphics/Fonts/corbert-webfont.ttf') format('truetype'),
+			url('../../Graphics/Fonts/corbert-webfont.svg#corbertregular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+
+		}
+
+
+
+
+		@font-face {
+			font-family: 'Stone_Serif';
+			src: url('../../Graphics/Fonts/stone_serif-webfont.eot');
+			src: url('../../Graphics/Fonts/stone_serif-webfont.eot?#iefix') format('embedded-opentype'),
+			url('../../Graphics/Fonts/stone_serif-webfont.woff') format('woff'),
+			url('../../Graphics/Fonts/stone_serif-webfont.ttf') format('truetype'),
+			url('../../Graphics/Fonts/stone_serif-webfont.svg#stone_serifregular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+
+		}
+		/*RESET*/
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+			text-align: left;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		html, html a {
+			-webkit-font-smoothing: antialiased !important;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+		}
+
+		/*General Styling*/
+		html {
+			width: 100%;
+			height: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		body {
+			background-color: #fff;
+		}
+		p {
+			font-size: 18px;
+			line-height: 1.2em;
+			-webkit-font-smoothing: antialiased;
+			font-family: "Segoe UI","proxima-nova","Helvetica-neue",helvetica,sans-serif;
+			font-weight: lighter;
+		}
+		h1 {
+			font-size: 35px;
+			font-family: 'Stone_Serif';
+			color: #830000;
+			text-transform: uppercase;;
+			letter-spacing: 1px;
+			text-align: left;
+		}
+		/*Divs*/
+		#container {
+			background-color: gray;
+			width: 100%;
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+			webkit-text-size-adjust:none;
+		}
+		#header {
+			background-color: #830000;
+			min-height: 150px;
+			width: 100%;
+
+		}
+		#headerContainer {
+			width: 960px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#headerContainer #text {
+			position: relative;
+			padding-top: 45px;
+			padding-left: 40px;
+			float: left;
+		}
+		#headerContainer #text h1 {
+			font-size: 35px;
+			font-family: 'Stone_Serif';
+			color: white;
+			text-transform: uppercase;;
+			letter-spacing: 1px;
+			text-align: left;
+
+		}
+		#headerContainer #text h2 {
+			position: relative;
+			top: 5px;
+			font-size: 22px;
+			font-family: 'Stone_Serif';
+			color: white;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+		#headerContainer #logo {
+			position: relative;
+			padding-top: 10px;
+			float: left;
+		}
+		#navbar {
+			background-color: #252525;
+			min-height: 45px;
+
+			-moz-box-shadow:    inset 0  8px 8px -8px #000, 
+			inset 0 -8px 8px -8px #000;
+			-webkit-box-shadow: inset 0  8px 8px -8px #000, 
+			inset 0 -8px 8px -8px #000;
+			box-shadow:		inset 0  8px 8px -8px #000, 
+			inset 0 -8px 8px -8px #000;
+
+
+		}
+		#navbarContainer {
+			display: table;
+			width: 960px;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+		#navbarContainer li {
+			font-family: 'Corbert';
+			font-size: 20px;
+			padding-top: 12px;
+			display: table-cell;
+			white-space: nowrap;
+			text-decoration: none;
+			position: relative;
+
+		}
+		#navbarContainer a {
+			text-decoration: none;
+			text-align: right;
+			font-size: 22px;
+			color: white;
+			/*padding-right:96%;*/
+		}
+		#navbarContainer a:hover {
+			text-decoration: underline;;
+		}
+		#navbarContainer ul li #first {
+			padding-right:150%;
+
+		}
+		#navbarContainer ul li #second {
+			padding-right:120%;
+
+		}
+		#navbarContainer ul li #third {
+			padding-right:80%;
+
+		}
+		#navbarContainer ul li #fourth {
+			padding-right:71%;
+		}
+
+		#navbarContainer ul li #last {
+			padding-right: 0;
+		}
+		
+
+		#footer {
+
+			position:relative;
+			bottom: 0px;
+			width: 100%;
+			background:#252525;
+			height: 100px;
+
+
+		}
+		#footer p {
+			position: relative;
+			color: white;
+			text-align: center;
+			top: 30px;
+			margin-bottom: 5px;
+			font-family: "Segoe UI","proxima-nova","Helvetica-neue",helvetica,sans-serif;
+
+		}
