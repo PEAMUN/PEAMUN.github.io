@@ -4,7 +4,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<script src="Code/JS/slideshow.js"></script>
 	<script type="text/javascript">
-	var end = new Date('10/25/2015 09:00 AM');
+	var end = new Date('10/30/2016 09:00 AM');
 
 		var _second = 1000;
 		var _minute = _second * 60;
@@ -16,10 +16,8 @@
 			var now = new Date();
 			var distance = end - now;
 			if (distance < 0) {
-
 				clearInterval(timer);
-				document.getElementById('countdown').innerHTML = 'EXPIRED!';
-
+				document.getElementById('countdown').innerHTML = 'Look Ahead to PEAMUN IX!';
 				return;
 			}
 			var days = Math.floor(distance / _day);
@@ -41,8 +39,6 @@
 		#slideshow {
 			min-height: 410px;
 			background-color: #830000;
-
-
 		}
 		#slideshow #slidesContainer {
 			margin:0 auto;
@@ -74,7 +70,6 @@
 			padding: 20px;
 			z-index: 10;
 			padding-bottom: 35px;
-
 		}
 		#slideContent #slideTitle {
 			margin-bottom: 5px;
@@ -94,7 +89,6 @@
 			/*text-transform: uppercase;*/
 			font-family: "Segoe UI","proxima-nova","Helvetica-neue",helvetica,sans-serif;
 			line-height: 1.1em;
-
 			font-weight: lighter;
 		}
 		.control {
@@ -124,7 +118,6 @@
 			background-color: white;
 			overflow: hidden;
 			padding-bottom: 100px;
-
 		}
 		#textContainer {
 			padding-top: 30px;
@@ -132,7 +125,6 @@
 			margin-left: auto;
 			margin-right: auto;
 			background-color: white;
-
 		}
 		#leftColumn {
 			/*box-shadow: 8px 0px 8px -8px #000, -8px 0px 8px -8px #000;*/
@@ -142,8 +134,6 @@
 			text-align: left;
 			min-height: 400px;
 			background-color: white;
-
-
 		}
 		#leftColumn h3 {
 			color: #830000;
@@ -152,30 +142,24 @@
 			position: relative;
 			margin-bottom: 5px;
 			margin-top: 15px;
-
 		}
 		#leftColumn #top {
 			margin-top: 0px;
-
 		}
 		#leftColumn p {
 			font-family: "Segoe UI","proxima-nova","Helvetica-neue",helvetica,sans-serif;
 			-webkit-font-smoothing: antialiased;
 			line-height: 1.3em;
-
 			font-size: 18px;
 		}
 		#rightColumn {
 			/*box-shadow: 8px 0px 8px -8px #000, -8px 0px 0px -8px #000;*/
-
 			position: relative;
 			width: 70%;
 			float: right;
 			min-height: 400px;
 			background-color: white;
-
 		}
-
 		#rightColumn p {
 			font-size: 16px;
 			line-height: 1.2em;
@@ -214,7 +198,7 @@
 				<div class="slide">
 					<div id="slideContent">
 						<h1 id="slideTitle">WELCOME TO PEAMUN VIII.</h1>
-						<h2 id="slideText">This is the Model UN club of Phillips Exeter Academy. We are renovating our website for PEAMUN VIII, which will take place on October 30, 2016. Stay tuned for more information!</h2>
+						<h2 id="slideText">PEAMUN is Phillips Exeter Academy's annual Model UN Conference, and PEAMUN VIII will take place on October 30, 2016. Registration is still open!</h2>
 					</div>
 					<div id="slidePlate">
 					</div>
@@ -223,22 +207,24 @@
 				<div class="slide">
 					<div id="slideContent">
 						<h1 id="slideTitle">WELCOME TO PEAMUN VIII.</h1>
-						<h2 id="slideText">This is the Model UN club of Phillips Exeter Academy. We are renovating our website for PEAMUN VIII, which will take place on October 30, 2016. Stay tuned for more information!</h2>
+						<h2 id="slideText">PEAMUN is Phillips Exeter Academy's annual Model UN Conference, and PEAMUN VIII will take place on October 30, 2016. Registration is still open!</h2>
 					</div>
 					<img src="Graphics/slide_2.jpg" height="410" width="960">
 				</div>
 				<div class="slide">
 					<div id="slideContent">
 						<h1 id="slideTitle">WELCOME TO PEAMUN VIII.</h1>
-						<h2 id="slideText">This is the Model UN club of Phillips Exeter Academy. We are renovating our website for PEAMUN VIII, which will take place on October 30, 2016. Stay tuned for more information!</h2>
-					</div>					<img src="Graphics/slide_3.jpg" height="410" width="960">
+						<h2 id="slideText">PEAMUN is Phillips Exeter Academy's annual Model UN Conference, and PEAMUN VIII will take place on October 30, 2016. Registration is still open!</h2>
+					</div>					
+					<img src="Graphics/slide_3.jpg" height="410" width="960">
 				</div>
 				<div class="slide">
 					<div id="slideContent">
 						<h1 id="slideTitle">WELCOME TO PEAMUN VIII.</h1>
-						<h2 id="slideText">This is the Model UN club of Phillips Exeter Academy. We are renovating our website for PEAMUN VIII, which will take place on October 30, 2016. Stay tuned for more information!</h2>
+						<h2 id="slideText">PEAMUN is Phillips Exeter Academy's annual Model UN Conference, and PEAMUN VIII will take place on October 30, 2016. Registration is still open!</h2>
 					</div>
-					<img src="Graphics/slide_1.jpg" height="410" width="960">				</div>
+					<img src="Graphics/slide_1.jpg" height="410" width="960">				
+				</div>
 			</div>
 		</div>
 		<div id="main">
@@ -250,12 +236,9 @@
 					<p>Priority Registration Deadline:</p> 
                     <p>August 15th</p>
                     <p>Regular Registration Deadline: </p>
-                    <p>September 1st</p>
+                    <p>September 15th</p>
                     <p>Late Registration Deadline: </p>
-                    <p>October 1st</p>
-					<!--<h3>UPCOMING DEADLINES</h3>
-					<p>July 1: preliminary registration.</p>
-					<p>July 15: Fees due.</p>-->			
+                    <p>October 15th</p>		
 				</div>
 				<div id="rightColumn">
 					<p>Dear Delegates and Advisors,</p>
