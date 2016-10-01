@@ -1,0 +1,273 @@
+<html>
+<head>
+	<title>PEAMUN Registration</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script src="Code/JS/slideshow.js"></script>
+
+	
+	<link rel="stylesheet" type="text/css" href="Code/CSS/main.css" media="screen">
+	<style type="text/css">
+		#main {
+			position: relative;
+			min-height: 500px;
+			background-color: white;
+			overflow: hidden;
+			padding-bottom: 100px;
+
+		}
+		#textContainer {
+			padding-top: 20px;
+			max-width: 960px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: white;
+			overflow: hidden;
+		}
+		#textContainer h1 {
+			font-size: 30px;
+			text-align: left;
+		}
+		label {
+			font-size: 14px;
+			color: #444;
+		}
+		td {
+			font-family: "Segoe UI","proxima-nova","Helvetica-neue",helvetica,sans-serif;
+		}
+		form {
+			background: #fff;
+			padding: 22px;
+		}
+
+		form ul li {
+			margin: 0 0 11px;
+		}
+
+		form ul li ul {
+			display: inline-block;
+		}
+
+		form ul li ul li {
+			margin: 0 11px 0 0;
+			float: left;
+		}
+
+		form a {
+			font-size: 14px;
+		}
+		table {
+			width: 100%;
+		}
+		tr {
+		}
+
+
+		input,
+		textarea,
+		select {
+
+			-webkit-appearance:none;
+
+			padding: 0.5em;
+			line-height: 1.2em;
+			width: 95%;
+
+			background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+			-webkit-appearance: none;
+			-webkit-box-shadow: 1px 1px 1px #fff;
+			-webkit-border-radius: 0.5em;
+
+			border: 1px solid #D0D0D0;
+			background: #FBFBFB;
+			-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+			-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+			-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			font-size: 14px;
+			color: #444;
+		}
+
+		input[type="text"]:focus,
+		select:focus,
+		textarea:focus {
+			background: #fff;
+			border: 1px solid #52A8E8;
+			-webkit-box-shadow: 0 0 1px 1px #eee;
+			box-shadow: 0 0 1px 1px #eee;
+			-moz-box-shadow: 0 0 1px 1px #eee;	
+		}
+
+		input[type=checkbox],
+		input[type=radio] {
+			border: 1px solid #c0c0c0;
+			margin: 0 0.1em 0 0;
+			padding: 0;
+			font-size: 16px;
+			line-height: 1em;
+			width: 1.25em;
+			height: 1.25em;
+			background: #fff;
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ededed), to(#fbfbfb));
+
+			-webkit-appearance: none;
+			-webkit-box-shadow: 1px 1px 1px #fff;
+			-webkit-border-radius: 0.25em;
+			vertical-align: text-top;
+			display: inline-block;
+
+		}
+
+		select {
+			border: 1px solid #D0D0D0;
+			background: url(http://www.quilor.com/i/select.png) no-repeat right center, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#830000), to(#830000));
+			background: -moz-linear-gradient(19% 75% 90deg,#830000, #830000a);
+			-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+			-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+			-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+			color: #444;
+		}
+
+		select:focus {
+			background: #fff url(http://www.quilor.com/i/select.png) no-repeat right center;
+		}
+
+		textarea {
+			height: 55px;
+		}
+
+		input[type="submit"] {
+			background: #830000;
+			border: 0;
+			border-bottom: 2px solid #830000;
+			color: #fff;
+			padding: 9px 21px;
+			text-align: center;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			width: auto;
+		}
+
+		input[type="submit"]:hover,
+		input[type="submit"]:active {
+			cursor: pointer;
+			background: #990000;
+			border: 0;
+			border-bottom: 2px solid transparent;
+		}
+
+		input[type="submit"] + a {
+			margin-left: 22px;
+		}
+
+		::-webkit-input-placeholder {
+			color: #444;
+		}
+
+		:-moz-placeholder {  
+			color: #444;
+		}
+
+		td {
+			position: relative;
+			padding-bottom: 10px;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="headerContainer">
+				<div id="logo">
+					<img src="Graphics/logo.png" height="135" width="135">
+				</div>
+				<div id="text">
+					<h1>Phillips Exeter Academy</h1>
+					<h2>Model United Nations</h2>
+				</div>
+			</div>
+		</div>
+		<div id="navbar">
+			<div id="navbarContainer">
+				<ul>
+					<li id="item"><a id="first" href="index.html">HOME</a></li>
+					<li id="item"><a id="second" href="about.html">ABOUT</a></li>
+					<li id="item"><a id="third" href="schedule.html">SCHEDULE</a></li>
+					<li id="item"><a id="fourth" href="committees.html">COMMITTEES</a></li>
+					<li id="item"><a id="last" href="registration.html">REGISTRATION</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+
+			<div id="textContainer">
+				<h1>PEAMUN 2015 Registration</h1>
+				<hr>
+				<p>While the website is currently undergoing renovation, PEAMUN 2015 is still open for registration. You can sign up using the form below. If you have any questions, please do  not hesitate to contact us at peamun@gmail.com.</p>
+				<br>
+
+				<form action="send_mail.php" method="post">
+					<table>
+						<tr>
+							<td>School Name *:</td>
+							<td>
+								<input type="text" name="schoolName" value="" maxlength="100" size="100" />
+							</td>
+						</tr>
+						<tr>
+							<td>Faculty Advisor Name *:</td>
+							<td>
+								<input type="text" name="advisorName" value="" maxlength="100" size="100" />
+							</td>
+						</tr>
+						<tr>
+							<td>Advisor Email Address *:</td>
+							<td>
+								<input type="text" name="advisorEmail" value="" maxlength="100" size="100"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Phone Number *:</td>
+							<td>
+								<input type="text" name="phoneNumber" value="" maxlength="100" size="100"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Name of Head Delegate:</td>
+							<td>
+								<input type="text" name="headDelegate" value="" maxlength="100" size="100"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Head Delegate Email:</td>
+							<td>
+								<input type="text" name="headDelegateEmail" value="" maxlength="100" size="100"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Number of Delegates (Approximate):</td>
+							<td>
+								<input type="text" name="delegates" value="" maxlength="100" size="100"/>
+							</td>
+						</tr>
+						<tr><td>&nbsp;</td>
+							<td>
+								<input type="submit" class="button" valu="submit"></a>
+							</td>
+						</tr>
+					</table>
+				</form>
+
+			</div>
+		</div>
+		<div id="footer">
+			<p>Copyright 2015 Phillips Exeter Academy MUN.</p>
+			<p>Designed and Coded by Hersh Bhargava.</p>
+		</div>
+	</div>
+</body>
+</html>
